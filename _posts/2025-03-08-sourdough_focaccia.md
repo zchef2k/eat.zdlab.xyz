@@ -34,7 +34,7 @@ recipe:
 ---
 There are many focaccia recipes out there, this one is mine. As with all bread recipes, where most of them differ is hydration- the relationship between wet and dry ingredients in the dough. While most rational people would agree there's not a single perfect ratio, there are circumstances why you'd choose lower versus higher and vice versa. For my kitchen, its oven, and the brands of ingredients I prefer, this recipe at 70% works for me. Working with high hydration dough can be intimidating at first, but once you understand the role autolyzation plays and how gluten is developed using the "stretch/slap and fold" method, your confidence will build. Practice makes perfect, so don't be afraid to fail- just don't give up.
 
-On fermentation, the dough will develop more flavor the longer the yeasts and bacteria feed- typically no longer than 72 hours. I minimally let it bulk ferment 24 hours in the refrigerator, though you can do this all within one day and it will still be great.
+On fermentation, the dough will develop more flavor the longer the yeasts and bacteria feed- generally no more than 72 hours. I minimally let it bulk ferment 24 hours in the refrigerator, though you can do this all within one day and it will still be great.
 
 Enjoy.
 
