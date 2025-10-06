@@ -1,0 +1,8 @@
+# Slug -> URL mapping for shortlinks used by the 404 router.
+# Keys are the slugs under /s/<slug>. Values can be:
+# - An absolute URL (e.g., https://example.com/path)
+# - A site-relative path (e.g., /recipes.html)
+#
+# Examples (uncomment and adjust):
+# docs: /recipes.html
+# repo: https://github.com/your/repo
