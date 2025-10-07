@@ -34,7 +34,7 @@ defaults:
       layout: "post"
       push_sidebar_down: true
       print_stylesheet: true
-      comments: true
+      comments: false
       _options:
         content:
           width: 1560
