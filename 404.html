@@ -21,8 +21,8 @@ sitemap: false
     var slug = path.substring(3).replace(/^\/+|\/+$/g, '');
     if (!slug) return;
 
-    // Embed YAML data from _data/shortlinks.yml directly as a JS object
-    var linkMap = {{ site.data.shortlinks | default: {} | jsonify }};
+    // Embed YAML data from _data/shortlinks.yml; fall back to {}
+    var linkMap = {{ site.data.shortlinks | jsonify }} || {};
 
     var target = linkMap && linkMap[slug];
     if (!target && slug.indexOf('/') !== -1) {
