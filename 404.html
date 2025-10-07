@@ -4,4 +4,56 @@ permalink: /404.html
 sitemap: false
 ---
 
+<script>
+(function () {
+  try {
+    var base = '{{ site.baseurl | default: "" }}';
+    var path = window.location.pathname || '/';
+    if (base && path.indexOf(base) === 0) {
+      path = path.slice(base.length) || '/';
+    }
+
+    // Handle shortlinks at /s/<slug>
+    if (path.indexOf('/s/') !== 0) {
+      return;
+    }
+
+    var slug = path.substring(3).replace(/^\/+|\/+$/g, '');
+    if (!slug) return;
+
+    // Embed YAML data from _data/shortlinks.yml; fall back to {}
+    var linkMap = {{ site.data.shortlinks | jsonify }} || {};
+
+    var target = linkMap && linkMap[slug];
+    if (!target && slug.indexOf('/') !== -1) {
+      // Optionally fall back to the first path segment
+      var first = slug.split('/')[0];
+      target = linkMap[first];
+    }
+
+    if (typeof target === 'string' && target.length > 0) {
+      var isAbsolute = /^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(target);
+      var url = target;
+      if (!isAbsolute) {
+        if (target.charAt(0) !== '/') target = '/' + target;
+        url = (base || '') + target;
+      }
+
+      // Replace without adding to history; provide a clickable fallback
+      window.location.replace(url);
+      var p = document.createElement('p');
+      var a = document.createElement('a');
+      a.href = url;
+      a.textContent = 'Click here if you are not redirected.';
+      p.appendChild(a);
+      document.addEventListener('DOMContentLoaded', function () {
+        document.body.appendChild(p);
+      });
+    }
+  } catch (e) {
+    // Intentionally no-op on errors; fall back to normal 404 content
+  }
+})();
+</script>
+
 <h1>This page could not be found</h1>
