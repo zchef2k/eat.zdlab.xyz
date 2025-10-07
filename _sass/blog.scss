@@ -183,3 +183,16 @@
 	text-align: center;
 	padding: 50px 0 0 0;
 }
+
+/* Center Giscus comments area within main content */
+.giscus,
+#comments.giscus {
+  margin: 40px auto 0 auto;
+  max-width: 800px;
+}
+
+/* Ensure the iframe uses the same constrained width */
+.giscus > iframe {
+  display: block;
+  margin: 0 auto;
+}
