@@ -84,3 +84,22 @@ _options:
   author_image:
     width: 400
     height: 400
+
+# ----
+# Giscus (GitHub Discussions-based comments)
+# Fill these values and set enabled to true.
+giscus:
+  enabled: false
+  repo: ""
+  repo_id: ""
+  category: ""
+  category_id: ""
+  mapping: "pathname"        # pathname | url | title | og:title
+  strict: 0                  # 0 = off, 1 = on
+  reactions_enabled: 1       # 1 = on, 0 = off
+  emit_metadata: 0           # 1 = on, 0 = off
+  input_position: "bottom"   # top | bottom
+  theme: "preferred_color_scheme" # light | dark | preferred_color_scheme | ...
+  lang: "en"
+  crossorigin: "anonymous"
+  loading: "lazy"
