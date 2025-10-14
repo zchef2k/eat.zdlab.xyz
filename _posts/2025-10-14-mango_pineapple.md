@@ -1,5 +1,6 @@
 ---
 date: 2025-10-14
+layout: hotsauce
 title: Mango Pineapple
 categories:
   - HotSauce

@@ -14,9 +14,9 @@ layout: default
 	</div>
 
 	<ul id="recipe" class="recipe-overview">
-		<li title="Servings">{% include recipe-icon.html icon="quantity" %}<span>{{ page.recipe.servings }}</span></li>
+		<!-- <li title="Servings">{% include recipe-icon.html icon="quantity" %}<span>{{ page.recipe.servings }}</span></li>
 		<li title="Prep Time">{% include recipe-icon.html icon="time" %}<span>{{ page.recipe.prep }}</span></li>
-		<li title="Cook Time">{% include recipe-icon.html icon="cook" %}<span>{{ page.recipe.cook }}</span></li>
+		<li title="Cook Time">{% include recipe-icon.html icon="cook" %}<span>{{ page.recipe.cook }}</span></li> -->
 	</ul>
 
 	<div class="recipe-contents">
@@ -26,7 +26,7 @@ layout: default
 		</div>
 
 		<div class="directions">
-			<h2>Directions</h2>
+			<h2>Method</h2>
 			{{ page.recipe.directions_markdown | markdownify }}
 		</div>
 	</div>
