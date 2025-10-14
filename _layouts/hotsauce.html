@@ -14,9 +14,9 @@ layout: default
 	</div>
 
 	<ul id="recipe" class="recipe-overview">
-		<li title="Servings">{% include recipe-icon.html icon="quantity" %}<span>{{ page.recipe.servings }}</span></li>
+		<!-- <li title="Servings">{% include recipe-icon.html icon="quantity" %}<span>{{ page.recipe.servings }}</span></li>
 		<li title="Prep Time">{% include recipe-icon.html icon="time" %}<span>{{ page.recipe.prep }}</span></li>
-		<li title="Cook Time">{% include recipe-icon.html icon="cook" %}<span>{{ page.recipe.cook }}</span></li>
+		<li title="Cook Time">{% include recipe-icon.html icon="cook" %}<span>{{ page.recipe.cook }}</span></li> -->
 	</ul>
 
 	<div class="recipe-contents">
@@ -26,7 +26,7 @@ layout: default
 		</div>
 
 		<div class="directions">
-			<h2>Directions</h2>
+			<h2>Method</h2>
 			{{ page.recipe.directions_markdown | markdownify }}
 		</div>
 	</div>
@@ -43,7 +43,23 @@ layout: default
 	<div class="cta">
 		<!-- <div class="button"><a href="{{ site.baseurl }}/recipes">Click here to browse other recipes</a></div> -->
 	</div>
-	{% include giscus.html %}
+	{% if site.disqus_shortname and page.comments %}
+		<div id="disqus_thread"></div>
+		<script>
+			var disqus_shortname = '{{ site.disqus_shortname }}';
+			var disqus_config = function () {
+				this.page.url = "{{ page.url | prepend: site.url }}";
+				this.page.identifier = "{{ page.id }}";
+			};
+			(function() {  // DON'T EDIT BELOW THIS LINE
+				var d = document, s = d.createElement('script');
+				s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+	{% endif %}
 </article>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
