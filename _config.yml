@@ -89,17 +89,17 @@ _options:
 # Giscus (GitHub Discussions-based comments)
 # Fill these values and set enabled to true.
 giscus:
-  enabled: false
-  repo: ""
-  repo_id: ""
-  category: ""
-  category_id: ""
+  enabled: true
+  repo: "zchef2k/eat.zdlab.xyz"
+  repo_id: "R_kgDOOG0ulw"
+  category: "Announcements"
+  category_id: "DIC_kwDOOG0ul84CwpMr"
   mapping: "pathname"        # pathname | url | title | og:title
   strict: 0                  # 0 = off, 1 = on
   reactions_enabled: 1       # 1 = on, 0 = off
   emit_metadata: 0           # 1 = on, 0 = off
   input_position: "bottom"   # top | bottom
-  theme: "preferred_color_scheme" # light | dark | preferred_color_scheme | ...
+  theme: "noborder_light" # light | dark | preferred_color_scheme | ...
   lang: "en"
   crossorigin: "anonymous"
   loading: "lazy"

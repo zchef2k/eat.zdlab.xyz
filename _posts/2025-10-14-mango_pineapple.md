@@ -2,6 +2,7 @@
 date: 2025-10-14
 layout: hotsauce
 title: Mango Pineapple
+comments: enabled
 categories:
   - HotSauce
 #featured_image: 1.png
