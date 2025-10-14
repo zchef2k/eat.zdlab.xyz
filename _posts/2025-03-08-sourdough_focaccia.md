@@ -1,6 +1,7 @@
 ---
 date: 2025-03-08
 title: Sourdough Focaccia (70% hydration)
+comments: enabled
 categories:
   - Breads
 featured_image: 1.jpg

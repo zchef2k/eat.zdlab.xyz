@@ -1,6 +1,7 @@
 ---
 date: 2025-10-14
 layout: hotsauce
+comments: enabled
 title: Tangerine Tiger
 categories:
   - HotSauce

@@ -34,7 +34,7 @@ defaults:
       layout: "post"
       push_sidebar_down: true
       print_stylesheet: true
-      comments: true
+      comments: false
       _options:
         content:
           width: 1560
@@ -84,3 +84,22 @@ _options:
   author_image:
     width: 400
     height: 400
+
+# ----
+# Giscus (GitHub Discussions-based comments)
+# Fill these values and set enabled to true.
+giscus:
+  enabled: true
+  repo: "zchef2k/eat.zdlab.xyz"
+  repo_id: "R_kgDOOG0ulw"
+  category: "Announcements"
+  category_id: "DIC_kwDOOG0ul84CwpMr"
+  mapping: "pathname"        # pathname | url | title | og:title
+  strict: 0                  # 0 = off, 1 = on
+  reactions_enabled: 1       # 1 = on, 0 = off
+  emit_metadata: 0           # 1 = on, 0 = off
+  input_position: "bottom"   # top | bottom
+  theme: "noborder_light" # light | dark | preferred_color_scheme | ...
+  lang: "en"
+  crossorigin: "anonymous"
+  loading: "lazy"
