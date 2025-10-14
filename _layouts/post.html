@@ -3,9 +3,11 @@ layout: default
 ---
 <article class="post">
 	{% include post-heading.html post=page post_page=true %}
+	{% if page.featured_image %}
 	<div class="image">
 		<img src="{{ page.featured_image }}" alt="{{ page.title }}">
 	</div>
+	{% endif %}
 
 	<div class="recipe-body">
 		{{ content }}
@@ -39,7 +41,7 @@ layout: default
 	</div>
 
 	<div class="cta">
-		<h2>More coming soon.</h2>
+		<!-- <h2>More coming soon.</h2> -->
 		<!-- <div class="button"><a href="{{ site.baseurl }}/recipes">Click here to browse other recipes</a></div> -->
 	</div>
 	{% if site.disqus_shortname and page.comments %}
