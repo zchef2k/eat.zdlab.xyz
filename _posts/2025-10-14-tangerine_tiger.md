@@ -18,7 +18,7 @@ recipe:
     * Garlic
     * Coriander seed
     * Sugar
-    * Xanhan Gum
+    * Xanthan Gum
   directions_markdown: |-
     * 10-day lactoferment in brine
   #   * Rinse and drain the collards thoroughly.
